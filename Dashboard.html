@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h3>Stella Maris Polytechnic University</h3>
+</div>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="grades.html">Grades</a>
+    <a href="courses.html">Course Planning</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </aside>
+
+  <main class="main">
+    <h2>Welcome, <span id="studentName"></span></h2>
+
+    <div class="cards">
+      <div class="card">Academic Status<br><strong>Active</strong></div>
+      <div class="card">Semester<br><strong>2nd</strong></div>
+      <div class="card">Faculty<br><strong>Business</strong></div>
+    </div>
+
+    <div id="adminPanel" style="display:none; margin-top:20px;">
+      <h3>Admin Panel</h3>
+      <p>Edit grades and courses below</p>
+      <button onclick="showGradeEditor()">Go to Grades Page</button>
+    </div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

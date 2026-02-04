@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Planning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">Course Planning</div>
+
+<div class="container">
+  <aside class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="grades.html">Grades</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </aside>
+
+  <main class="main">
+    <textarea id="courses" placeholder="Plan your courses here..." rows="10"></textarea>
+    <button onclick="saveCourses()">Save</button>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

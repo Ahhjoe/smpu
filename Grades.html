@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grades & GPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">Grades & GPA</div>
+
+<div class="container">
+  <aside class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </aside>
+
+  <main class="main">
+
+    <h3>Semester Grades</h3>
+    <table id="gradeTable">
+      <tr>
+        <th>Course</th>
+        <th>Credits</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td><input value="ACCT 201"></td>
+        <td><input type="number" value="3"></td>
+        <td>
+          <select>
+            <option>A</option>
+            <option>B+</option>
+            <option>B</option>
+            <option>C+</option>
+            <option>C</option>
+            <option>D</option>
+            <option>F</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <button onclick="addRow()">Add Course</button>
+    <button onclick="calculateGPA()">Calculate Semester GPA</button>
+
+    <h3>Semester GPA: <span id="gpa">0.00</span></h3>
+    <h3>Cumulative GPA (CGPA): <span id="cgpa">0.00</span></h3>
+
+    <button onclick="downloadGrades()">Download PDF Grade Slip</button>
+
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
